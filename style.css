@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+:root{
+    --primary-color-strong-cyan: hsl(171, 66%, 44%);
+    --primary-color-lightblue: hsl(233, 100%, 69%);
+    --neutral-color-dark-grayish-blue: hsl(210, 10%, 33%);
+    --neutral-color-grayish-blue: hsl(201, 11%, 66%);
+}
+html{
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+body{
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 7em;
+    text-align: center;
+}
+
+
+h1{
+    color: var(--neutral-color-dark-grayish-blue);
+    margin-top: 1.8em;
+    margin-bottom: .8em;
+    font-size: 32px;
+    font-weight: 600;
+}
+p{
+    line-height: 1.5em;
+    font-size: 18px;
+    color: var(--neutral-color-grayish-blue);
+}
+.downloads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.download-ios{
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: var(--primary-color-strong-cyan);
+    padding: 1em 5em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    filter: drop-shadow(0 0.2em 0.1em hsl(171, 66%, 35%));
+    max-width: max-content;
+    text-align: center;
+}
+
+.download-mac{
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: var(--primary-color-lightblue);
+    padding: 1em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    filter: drop-shadow(0 0.2em 0.1em hsl(233, 45%, 37%));
+    padding: 1em 5em;
+    text-align: center;
+
+}
+
+.two1 h1{
+    margin-top: 5em;
+}
+
+.two2 img{
+    width: 100%;
+    margin-top: 5em;
+}
+
+.two2 h2{
+    color: var(--neutral-color-dark-grayish-blue);
+    margin-top: 2em;
+    margin-bottom: .5em;
+}
+
+.three h1{
+    margin-top: 4em;
+}
+.three .image-one{
+    width: 100%;
+    margin-top: 5em;
+    filter: drop-shadow(0 0.5em 0.655em hsl(201, 11%, 66%));
+}
+
+.three img{
+    margin-top: 5em;
+}
+.three h2{
+    color: var(--neutral-color-dark-grayish-blue);
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+ul{
+    list-style: none;
+    margin-top: 5em;
+}
+li{
+    margin-top: 3em;
+}
+
+.four h1{
+    margin-top: 5em;
+}
+
+footer{
+    margin-top:5em;
+    background-color: hsla(202, 11%, 66%, 0.123);
+    padding: 2em;
+    color: var(--neutral-color-dark-grayish-blue);
+    font-weight: 600;
+}
+footer img{
+    width: 20%;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    text-align: center;
+}
+ion-icon{
+   padding-right: 2em;
+    width: 25px;
+    height: 25px;
+    color: var(--neutral-color-dark-grayish-blue);
+}
+
+footer li{
+    margin-top: 1.5em;
+}
+
+footer ul{
+    margin-top: 3em;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--neutral-color-grayish-blue);
+}
+
+.attribution{
+    margin-top: 3em;
+}
+
+.attribution a{
+    color: var(--primary-color-strong-cyan);
+}
+
+@media screen and (min-width:992px){
+    html{
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100%; 
+        overflow-x: hidden;
+    }
+   .one{
+        width: 80%;
+        margin: auto;
+    }
+    h1{
+        font-size: 42px;
+    }
+    p{
+        font-size: 26px;
+    }
+
+    .downloads{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        margin-top: 2em;  
+    }
+
+    .download-ios{
+        padding: 1em 3em;
+    }
+    .download-ios:hover{
+        background-color: rgba(47, 214, 189, 0.836)
+    }
+    
+    .download-mac{
+        padding: 1em 3em;
+    }
+
+    .download-mac:hover{
+        background-color: hsl(233, 97%, 72%);
+    }
+    
+    .two1{
+        width: 70%;
+        margin: auto;
+
+    }
+    .two1 h1{
+        margin-top: 3em;
+    }
+
+    .two2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .two2-img{
+        margin-left: -13em;      
+    }
+
+    .two2-texts{
+        text-align: start;
+        margin-left: 8em;
+        width: 40%;
+        padding-right: 5em;
+    }
+    .two2-texts h1{
+        font-size: 24px;
+        margin-top: .5em;
+    }
+    .two2-texts p{
+        font-size: 18px;
+    }
+   
+    .three .image-one{
+        width: 80%;
+    }
+    .three1{
+        width: 70%;
+        margin: auto;
+    }
+    .three1 h1{
+        margin-top: 3em;
+    }
+    .icons{
+        display: flex;
+    }
+
+    .logos{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        margin-top: 2.5em;
+        justify-content: space-evenly;
+        
+    }
+
+    .four1{
+        width: 70%;
+        margin: auto;
+    }
+
+    .four .downloads{
+        width: 40%;
+    }
+
+    footer{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        width:100%;
+
+     
+    }
+    
+    footer ul{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 1em;
+        text-align: start;
+        margin: auto;
+        /*width: 40%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;*/
+
+    }
+    footer img{
+       width: 10%;
+       height: 10%;
+       margin-left: 2em;
+   
+    }
+    footer a{
+        text-decoration: none;
+        color: var(--neutral-color-grayish-blue);
+    }
+
+    footer a:hover{
+        color: var(--primary-color-strong-cyan) ;
+    }
+    ion-icon:hover{
+        color: var(--primary-color-lightblue);
+    }
+    
+   
+    
+
+
+    
+
+
+}
